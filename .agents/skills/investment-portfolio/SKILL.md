@@ -258,11 +258,23 @@ POLICY.md の方針に沿った具体的な提案を作成します。
 
 以下のフォーマットでMarkdownレポートを出力してください。
 
+**追記必須（実行メタデータ）**:
+- 使用エンジン: `Codex` または `Claude Code`
+- 使用モデル: 例 `gpt-5.4` / `claude-sonnet-4-6`
+- reasoning effort（取得できる場合）
+- 実行時刻（UTC）
+
 ```markdown
 # ポートフォリオ分析レポート — {date}
 
 **前回状態**: {CURRENT.mdの状態日付}
 **分析時点**: {本日の日付}
+
+## 実行メタデータ
+- **使用エンジン**: {Codex / Claude Code}
+- **使用モデル**: {model_name}
+- **reasoning effort**: {xhigh/high/none/unknown}
+- **実行時刻(UTC)**: {YYYY-MM-DD HH:MM:SS}
 
 > ⚠️ **免責事項**: このレポートは情報提供・分析目的であり、特定の金融商品の売買を推奨するものではありません。投資判断はご自身の責任で行ってください。
 
